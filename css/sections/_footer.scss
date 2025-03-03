@@ -1,0 +1,79 @@
+.footer {
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 80px;
+}
+.navigation__item {
+width: 13.5%;
+}
+.navigation__item-box {
+display: flex;
+align-items: center;
+.navigation__text{
+    font-weight: 500;
+    margin: 15px 0px;
+}
+}
+.navigation__img {
+width: 24px;
+height: 24px;
+margin-right: 8px;
+}
+.globus {
+background: url("../img/globus.svg")center no-repeat;
+}
+.navigation__text {
+font-size: 16px;
+color: #475569;
+padding: 12px 0px;
+line-height: 140%;
+}
+.cloud {
+    background: url("../img/cloud.svg")center no-repeat;
+}
+.gear {
+    background: url("../img/gear.svg")center no-repeat;
+}
+.sheme {
+    background: url("../img/sheme.svg")center no-repeat;
+}
+.headphones {
+    background: url("../img/headset.svg")center no-repeat;
+}
+.codepen{
+    background: url("../img/codepen.svg")center no-repeat;
+}
+.footer__title {
+    font-size: 16px;
+    color: #475569;
+    padding: 48px 80px 24px 80px;
+    line-height: 140%;
+}
+.footer__subtitle {
+    font-size: 12px;
+    color: #475569;
+    padding: 24px 80px 48px 80px;
+    line-height: 140%;
+}
+@media(max-width:1024px){
+    .navigation{
+        flex-wrap: wrap;
+    }
+    .navigation__item{
+        width: 100%;
+    }
+
+}
+@media(max-width:768px){
+    .navigation{
+padding: 48px 16px;
+    }
+    .footer__title{
+        padding: 48px 16px;  
+    }
+    .footer__subtitle{
+        padding: 48px 16px;  
+    }
+}
