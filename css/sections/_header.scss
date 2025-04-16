@@ -347,9 +347,13 @@
   [hidden] {
     display: none;
   }
+  html{
+    scroll-behavior: smooth;
+  }
 body{
     font-family: sans-serif,"Roboto";
 }
+
 .container{
         margin: 0 auto;
         max-width: 1280px;
@@ -383,23 +387,27 @@ border: none;
 cursor: pointer;
 }
 .nav_menu__button-header {
-font-family: Roboto;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.5px;
-border-radius: 5px;
-border: none;
-padding: 12px 8px;
-background: transparent;
-transition: 0.3s;
-color: #fff;
-&.border {
-    border: 2px #fff solid;
-color: white;
-padding: 12px 12px;
-width: 127px;
+
 }
+.nav_menu__item{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 8px;
+  background: transparent;
+  transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+  &.border {
+      border: 2px #fff solid;
+  color: white;
+  padding: 12px 12px;
+  width: 127px;
+  }
 }
 .nav_menu__button-header:hover{
     background: rgb(178, 178, 178);
@@ -430,6 +438,7 @@ background: transparent;
 .logo {
 }
 .nav_menu-mob {
+  display: none;
 }
 .nav_menu {
 }
@@ -445,11 +454,17 @@ background: transparent;
     }
 }
 @media(max-width:768px){
-    .nav_menu{
-        display: none;
+  .nav_menu__item{
+    display: none;
+    &.border{
+      display: block;
     }
+  }
+  .nav_menu{
+    justify-content: right;
+  }
     .nav_menu-mob{
-        display: block;
+        display: none;
     }
     .header__box{
         padding: 16px;
