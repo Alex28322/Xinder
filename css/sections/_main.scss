@@ -1021,7 +1021,7 @@ margin-top: 54px;
 }
 @media(max-width:760px){
     .intro__form-box{
-        width: 95%;
+        width: 85%;
         margin-top: -10px;
     }
     .intro{
@@ -1078,6 +1078,13 @@ margin-top: 54px;
     }
     .services{
         padding: 48px 16px;
+        flex-wrap: wrap;
+    }
+    .services__left{
+        width: 95%;
+    }
+    .services__right{
+        width: 95%;
     }
     .services-box{
         flex-wrap: wrap;
