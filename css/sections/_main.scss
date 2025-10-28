@@ -95,13 +95,15 @@ justify-content: space-between;
 }
 .intro__form-box {
     width: 83.3%;
-padding: 40px;
 border-radius: 16px;
 background-color: #6E0F2C;
 margin-top: -110px;
 position: relative;
 z-index: 2;
 max-width: 1280px;
+}
+.intro__form-container{
+    padding: 40px;
 }
 .intro__form-error{
     background: url("../img/error-back.svg") center no-repeat;
@@ -916,7 +918,7 @@ margin-bottom: 16px;
         
         .solution{
             flex-wrap: wrap;
-padding: 48px 16px;
+padding: 24px 8px;
         }
         .solution__left{
             order: 2;
@@ -1021,7 +1023,7 @@ margin-top: 54px;
 }
 @media(max-width:760px){
     .intro__form-box{
-        width: 85%;
+        width: 100%;
         margin-top: -10px;
     }
     .intro{
@@ -1032,7 +1034,9 @@ margin-top: 54px;
         white-space: nowrap;
     margin-right: 8px;
     }
-
+    .intro__form-button{
+        width: 50%;
+    }
     .lables{
         padding: 48px 16px;
     }
@@ -1102,8 +1106,20 @@ margin-top: 54px;
         width: 361px;
         height: 258px;
     }
+    .video__play{
+        width: 48px;
+        height: 48px;
+    }
+    .video__play-button{
+        width: 32px;
+        height: 32px;
+        background-size: contain;
+    }
     .video{
         padding: 48px 16px;
+    }
+    .video_box{
+        padding: 40px;
     }
     .video__right{
         width: 100%;
@@ -1145,7 +1161,24 @@ margin-top: 54px;
 @media(max-width:425px){
     .intro__img{
         width: 100%;
-
+        background: url("../img/col.png") center bottom no-repeat;
+        background-size: contain;
+    }
+    .gallery__box{
+        max-width: 300px;
+    }
+      .video_box{
+        padding: 24px;
+    }
+      video{
+        width: 250px;
+        height: 197px;
+    }
+    .events__item-img{
+        width: 90%;
+    }
+    .intro__form-container{
+        padding: 20px;
     }
     .solution__img{
         width: 100%;
