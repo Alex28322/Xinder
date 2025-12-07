@@ -1899,4 +1899,29 @@ button {
   .intro__input-box-large {
     width: 90%;
   }
+}
+@media (max-width: 760px) {
+  .form__large {
+    padding: 32px;
+  }
+  .form__large-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .intro__form-label-large {
+    font-size: 9px;
+  }
+  .intro__form-input-large {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .intro__form-button-large {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  .intro__input-box-large {
+    padding: 4px 8px;
+    margin-bottom: 12px;
+  }
 }/*# sourceMappingURL=styles.css.map */
